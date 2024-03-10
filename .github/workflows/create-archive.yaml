@@ -11,6 +11,8 @@ jobs:
       uses: actions/checkout@v4
     - name: pull latest and remove old file from repo
       run: |
+        git config --global user.name "giquon"
+        git config --global user.email "d.janssen00@gmail.com"
         git pull
         rm -f release.zip
     - name: Archive Release
