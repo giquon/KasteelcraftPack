@@ -12,6 +12,7 @@ jobs:
     - name: pull latest and remove old file from repo
       run:
         git pull
+      run:
         rm -f release.zip
     - name: Archive Release
       uses: thedoctor0/zip-release@master
