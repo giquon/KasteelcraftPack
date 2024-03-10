@@ -1,5 +1,8 @@
 name: Create Archive
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,15 +10,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: pull latest and remove old file from repo
-      run: |
-        git config --global user.name "giquon"
-        git config --global user.email "d.janssen00@gmail.com"
-        git config pull.rebase false
+      run:
         git pull
         rm -f release.zip
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
+        type: 'zip'
         filename: 'release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - name: push changes to remote
