@@ -1,7 +1,7 @@
 {
     "pack": {
-        "pack_format": 15,
-		"supported_formats": [15, 22],
+        "pack_format": 34,
+		"supported_formats": [15, 34],
         "description": "\u00a76Vanilla Tweaks 1.19\n\u00a7evanillatweaks.net"
     }
 }
