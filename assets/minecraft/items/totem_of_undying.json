@@ -1,0 +1,55 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:component",
+		"component": "minecraft:custom_name",
+		"cases": [
+			{
+				"when": "Marl of Undying",
+				"model": {
+					"type": "model",
+					"model": "item/marl_of_undying"
+				}
+			},
+			{
+				"when": "Mayo of Undying",
+				"model": {
+					"type": "model",
+					"model": "item/mayo_of_undying"
+				}
+			},
+			{
+				"when": "Paddington Bear",
+				"model": {
+					"type": "model",
+					"model": "item/paddington_bear"
+				}
+			},
+			{
+				"when": "Player of Undying",
+				"model": {
+					"type": "model",
+					"model": "item/totem_player_of_undying"
+				}
+			},
+			{
+				"when": "Potato of Undying",
+				"model": {
+					"type": "model",
+					"model": "item/potato_of_undying"
+				}
+			},
+			{
+				"when": "Veggie of Undying",
+				"model": {
+					"type": "model",
+					"model": "item/veggie_of_undying"
+				}
+			}
+		],
+		"fallback": {
+			"type": "model",
+			"model": "item/totem_of_undying"
+		}
+	}
+}
