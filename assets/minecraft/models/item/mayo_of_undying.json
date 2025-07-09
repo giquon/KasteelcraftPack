@@ -1,0 +1,6 @@
+{
+	"parent": "item/player_of_undying",
+	"textures": {
+		"1": "item/giquon"
+	}
+}
